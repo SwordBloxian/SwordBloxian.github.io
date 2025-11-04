@@ -8,3 +8,138 @@
   <p>This is my home page. we sell brianrot.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Slots with Prices</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .slots-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .slot {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .slot:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    .slot img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .slot h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .slot p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    .slot button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slot button:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .slots-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Our 6 Slots</h1>
+  <div class="slots-container">
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 1">
+      <h3>Slot 1</h3>
+      <p>Description for slot 1.</p>
+      <div class="price">$50</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 2">
+      <h3>Slot 2</h3>
+      <p>Description for slot 2.</p>
+      <div class="price">$75</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 3">
+      <h3>Slot 3</h3>
+      <p>Description for slot 3.</p>
+      <div class="price">$100</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 4">
+      <h3>Slot 4</h3>
+      <p>Description for slot 4.</p>
+      <div class="price">$120</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 5">
+      <h3>Slot 5</h3>
+      <p>Description for slot 5.</p>
+      <div class="price">$90</div>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="slot">
+      <img src="https://via.placeholder.com/250x150" alt="Slot 6">
+      <h3>Slot 6</h3>
+      <p>Description for slot 6.</p>
+      <div class="price">$60</div>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
